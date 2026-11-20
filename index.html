@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101010">
+<title>اشتراك تجريبي | YOUR BRAND</title>
+<style>
+:root{--bg:#101010;--panel:#1e1e1e;--red:#e50914;--muted:#aaa;--line:#393939}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:#fff;font-family:Tahoma,Arial,sans-serif;line-height:1.65}
+button,input{font:inherit}button{cursor:pointer}.top{height:68px;padding:0 6%;display:flex;align-items:center;justify-content:space-between;background:#090909;position:sticky;top:0;z-index:3}.brand{font-size:25px;font-weight:900;color:var(--red)}.top small{color:#bbb}
+main{max-width:1050px;margin:0 auto;padding:34px 20px 60px}.intro{text-align:center;margin:10px auto 30px;max-width:680px}.eyebrow{color:#ff747a;font-size:13px;font-weight:bold}.intro h1{font-size:clamp(30px,5vw,46px);margin:7px 0}.intro p{color:#bbb;margin:0}
+.notice{border:1px solid #8c6b24;background:#302713;color:#ffe0a0;border-radius:9px;padding:12px 15px;font-size:13px;margin:20px 0}
+.steps{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:24px 0}.step{padding:7px 13px;border:1px solid var(--line);border-radius:30px;color:#999;font-size:12px}.step.active{border-color:var(--red);color:white;background:#351316}
+.plans{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;max-width:720px;margin:0 auto}.plan{background:linear-gradient(145deg,#242424,#181818);border:1px solid #383838;border-radius:13px;padding:24px;position:relative}.plan.featured{border:1px solid var(--red)}.tag{color:#ff858a;font-size:12px;font-weight:bold}.plan h2{margin:7px 0}.price{font-size:35px;font-weight:bold}.price small{font-size:13px;color:#aaa;font-weight:normal}.plan ul{color:#ccc;padding-right:20px;font-size:14px;min-height:92px}.btn{border:0;border-radius:6px;padding:12px 18px;font-weight:bold}.primary{background:var(--red);color:white}.primary:hover{background:#b80710}.secondary{background:#333;color:white}.wide{width:100%}
+.panel{max-width:540px;margin:0 auto;background:var(--panel);border:1px solid #333;border-radius:13px;padding:24px;box-shadow:0 18px 55px #0006}.panel h2{margin:0 0 5px}.muted{color:var(--muted);font-size:13px;margin:0 0 18px}.summary{background:#141414;border:1px solid #333;border-radius:8px;padding:12px;margin:14px 0;display:flex;justify-content:space-between;gap:10px}.field{margin:14px 0}.field label{display:block;font-size:13px;margin-bottom:6px;color:#ddd}.field input{width:100%;padding:12px;border:1px solid #494949;border-radius:6px;background:#111;color:white;outline:none}.field input:focus{border-color:#e50914}.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}.hint{font-size:11px;color:#999;margin-top:5px}.disclaimer{background:#2c2417;border:1px solid #80632b;color:#ffe0a0;border-radius:8px;padding:12px;margin:17px 0 5px;font-size:12px;font-weight:bold}.actions{display:flex;gap:10px;margin-top:18px}.actions button{flex:1}.hidden{display:none!important}.success{text-align:center;padding:25px 5px}.success .check{font-size:48px;color:#65d391}.success h2{margin:5px}.success p{color:#bbb}.survey{max-width:540px;margin:20px auto 0;background:#191919;padding:20px;border-radius:12px;border:1px solid #333}.survey label{display:block;font-size:13px;margin:12px 0 6px}.survey select,.survey textarea{width:100%;padding:11px;border:1px solid #444;background:#101010;color:#fff;border-radius:6px}.survey textarea{min-height:80px}.status{min-height:20px;font-size:12px;margin-top:10px;color:#f4c76b}.foot{text-align:center;color:#777;font-size:12px;padding:20px;border-top:1px solid #292929}
+@media(max-width:650px){.plans{grid-template-columns:1fr}.plan ul{min-height:0}.top{padding:0 4%}.two{grid-template-columns:1fr 1fr}.panel{padding:18px}}
+</style>
+</head>
+<body>
+<header class="top"><div class="brand" id="brand">YOUR BRAND</div><small>نموذج اشتراك تجريبي</small></header>
+<main>
+<section class="intro">
+ <div class="eyebrow">تجربة استخدام — نسخة تجريبية</div>
+ <h1>اختر اشتراكك وجرّب خطوات الدفع</h1>
+ <p>نختبر سهولة خطوات الاشتراك فقط. لا توجد عملية دفع أو خصم أموال حقيقية.</p>
+</section>
+<div class="notice">تنبيه: هذه صفحة تجريبية فقط. لا تدخل أي معلومات بطاقة حقيقية أو كلمة مرور أو رمز OTP مصرفي. استخدم القيم التجريبية الموضحة في الصفحة حصراً.</div>
+<div class="steps"><span class="step active" id="s1">1. اختيار الباقة</span><span class="step" id="s2">2. بيانات تجريبية</span><span class="step" id="s3">3. رمز تحقق تجريبي</span><span class="step" id="s4">4. النتيجة</span></div>
+
+<section id="plans">
+ <div class="plans">
+  <article class="plan"><div class="tag">الباقة الأساسية</div><h2>Basic</h2><div class="price">$5 <small>/ شهرياً (سعر افتراضي)</small></div><ul><li>الوصول إلى الخدمات الأساسية</li><li>دعم العملاء</li><li>تجربة اشتراك مبسطة</li></ul><button class="btn secondary wide" onclick="choosePlan('Basic','$5')">اختيار الباقة</button></article>
+  <article class="plan featured"><div class="tag">الأكثر اختياراً — مثال</div><h2>Premium</h2><div class="price">$10 <small>/ شهرياً (سعر افتراضي)</small></div><ul><li>جميع مزايا الباقة الأساسية</li><li>مزايا إضافية</li><li>أولوية الدعم</li></ul><button class="btn primary wide" onclick="choosePlan('Premium','$10')">اختيار الباقة</button></article>
+ </div>
+</section>
+
+<section id="payment" class="hidden">
+ <div class="panel">
+  <h2>طريقة الدفع — محاكاة</h2><p class="muted">هذه الشاشة تحاكي ترتيب نموذج الدفع فقط ولا تتصل بأي بنك أو شبكة بطاقات.</p>
+  <div class="summary"><span>الباقة المختارة</span><strong id="planName">—</strong></div>
+  <div class="field"><label for="demoCard">معرّف بطاقة تجريبي (ليس رقم بطاقة)</label><input id="demoCard" autocomplete="off" placeholder="اكتب TEST-CARD فقط" maxlength="20"><div class="hint">القيمة المطلوبة: TEST-CARD — لا تستخدم رقم بطاقة حقيقياً.</div></div>
+  <div class="two"><div class="field"><label for="demoExpiry">تاريخ تجريبي</label><input id="demoExpiry" placeholder="MM/YY" maxlength="5" autocomplete="off"></div><div class="field"><label for="demoCvv">رمز أمان تجريبي</label><input id="demoCvv" placeholder="اكتب 000" maxlength="3" autocomplete="off"></div></div>
+  <div class="disclaimer">هذه صفحة تجريبية. لا تضف معلومات بطاقة أصلية أو بيانات مالية حقيقية.</div>
+  <div class="actions"><button class="btn secondary" onclick="goBack('plans')">رجوع</button><button class="btn primary" onclick="continueToOtp()">متابعة تجريبية</button></div>
+  <div class="status" id="paymentStatus" aria-live="polite"></div>
+ </div>
+</section>
+
+<section id="otp" class="hidden">
+ <div class="panel">
+  <h2>التحقق التجريبي</h2><p class="muted">محاكاة لشاشة إدخال رمز تحقق. هذا الرمز ليس OTP مصرفياً ولا يصدر عن بنك.</p>
+  <div class="summary"><span>الباقة</span><strong id="otpPlan">—</strong></div>
+  <div class="field"><label for="demoOtp">رمز الاختبار</label><input id="demoOtp" inputmode="numeric" autocomplete="off" maxlength="6" placeholder="123456"></div>
+  <div class="hint">رمز الاختبار الثابت لهذه المعاينة: 123456</div>
+  <div class="disclaimer">لا تدخل رمزاً وصل إلى هاتفك من بنك أو جهة مالية. استخدم 123456 فقط.</div>
+  <div class="actions"><button class="btn secondary" onclick="goBack('payment')">رجوع</button><button class="btn primary" onclick="finishDemo()">تحقق تجريبي</button></div>
+  <div class="status" id="otpStatus" aria-live="polite"></div>
+ </div>
+</section>
+
+<section id="result" class="hidden">
+ <div class="panel success"><div class="check">✓</div><h2>اكتملت المحاكاة بنجاح</h2><p>شكراً لمساعدتنا في اختبار خطوات الاشتراك. لم يتم تنفيذ أي دفع أو استخدام بيانات مصرفية.</p><button class="btn primary" onclick="showSurvey()">شاركنا رأيك</button></div>
+ <div class="survey hidden" id="survey">
+  <h2>ما رأيك في تجربة الاشتراك؟</h2>
+  <label for="ease">كيف وجدت سهولة الخطوات؟</label>
+  <select id="ease"><option value="">اختر إجابة</option><option>سهلة جداً</option><option>سهلة</option><option>متوسطة</option><option>صعبة</option><option>صعبة جداً</option></select>
+  <label for="barrier">ما أكثر شيء قد يمنعك من إتمام اشتراك حقيقي؟</label>
+  <select id="barrier"><option value="">اختر إجابة</option><option>لا أمتلك بطاقة دفع</option><option>لا أعرف كيفية الدفع الإلكتروني</option><option>لا أفهم خطوة التحقق</option><option>لا أثق بالدفع عبر الإنترنت</option><option>بطاقتي لا تدعم الدفع الدولي</option><option>لا توجد مشكلة</option><option>سبب آخر</option></select>
+  <label for="feedback">ملاحظاتك (اختياري)</label><textarea id="feedback" maxlength="1000" placeholder="ما الذي تقترح تحسينه؟"></textarea>
+  <button class="btn primary wide" style="margin-top:14px" onclick="sendSurvey()">إرسال الرأي</button><div class="status" id="surveyStatus" aria-live="polite"></div>
+ </div>
+</section>
+</main>
+<footer class="foot">© <span id="year"></span> YOUR BRAND — نموذج بحثي تجريبي غير مخصص لتحصيل المدفوعات.</footer>
+<script>
+// ضع رابط Google Apps Script المنشور هنا بعد إعداده. لا تضع أي أسرار أو رموز بوت في هذا الملف.
+const REPORT_ENDPOINT = "ضع_رابط_Apps_Script_هنا";
+const COMPANY = "YOUR BRAND";
+let chosenPlan = "";
+let chosenPrice = "";
+let startedAt = Date.now();
+let paymentStartedAt = 0;
+
+document.getElementById("brand").textContent = COMPANY;
+document.getElementById("year").textContent = new Date().getFullYear();
+document.title = "اشتراك تجريبي | " + COMPANY;
+
+function setStep(n){
+  ["s1","s2","s3","s4"].forEach((id,i)=>document.getElementById(id).classList.toggle("active",i===n-1));
+}
+function show(id){
+  ["plans","payment","otp","result"].forEach(x=>document.getElementById(x).classList.toggle("hidden",x!==id));
+  window.scrollTo({top:0,behavior:"smooth"});
+}
+function report(eventName, extra={}){
+  if(!REPORT_ENDPOINT || REPORT_ENDPOINT==="ضع_رابط_Apps_Script_هنا") return;
+  const data = {
+    event:eventName, plan:chosenPlan, price:chosenPrice,
+    elapsedSeconds:Math.round((Date.now()-startedAt)/1000),
+    device:/Mobi|Android/i.test(navigator.userAgent)?"mobile":"desktop",
+    language:navigator.language || "unknown",
+    ...extra
+  };
+  // لا يتم قراءة أو إرسال أي حقول بطاقة أو رمز تحقق.
+  fetch(REPORT_ENDPOINT,{method:"POST",mode:"no-cors",headers:{"Content-Type":"application/x-www-form-urlencoded;charset=UTF-8"},body:new URLSearchParams(data)});
+}
+function choosePlan(name,price){
+  chosenPlan=name;chosenPrice=price;
+  document.getElementById("planName").textContent=name+" — "+price;
+  document.getElementById("otpPlan").textContent=name+" — "+price;
+  paymentStartedAt=Date.now();
+  setStep(2);show("payment");report("plan_selected");
+}
+function goBack(id){show(id);if(id==="plans")setStep(1);else if(id==="payment")setStep(2);}
+function continueToOtp(){
+  const card=document.getElementById("demoCard").value.trim().toUpperCase();
+  const expiry=document.getElementById("demoExpiry").value.trim();
+  const cvv=document.getElementById("demoCvv").value.trim();
+  const status=document.getElementById("paymentStatus");
+  if(card!=="TEST-CARD" || !/^\d{2}\/\d{2}$/.test(expiry) || cvv!=="000"){
+    status.textContent="للمتابعة استخدم القيم التجريبية فقط: TEST-CARD و 12/30 و 000.";
+    return;
+  }
+  status.textContent="";
+  report("demo_payment_fields_completed",{paymentStageSeconds:Math.round((Date.now()-paymentStartedAt)/1000)});
+  document.getElementById("demoOtp").value="";
+  setStep(3);show("otp");
+}
+function finishDemo(){
+  const otp=document.getElementById("demoOtp").value.trim();
+  const status=document.getElementById("otpStatus");
+  if(otp!=="123456"){status.textContent="رمز الاختبار غير صحيح. استخدم 123456.";return;}
+  status.textContent="";
+  report("demo_verification_completed");
+  setStep(4);show("result");
+}
+function showSurvey(){document.getElementById("survey").classList.remove("hidden");}
+function sendSurvey(){
+  const ease=document.getElementById("ease").value;
+  const barrier=document.getElementById("barrier").value;
+  const feedback=document.getElementById("feedback").value.trim();
+  const status=document.getElementById("surveyStatus");
+  if(!ease || !barrier){status.textContent="يرجى اختيار إجابة للسؤالين.";return;}
+  report("survey_submitted",{ease,barrier,feedback});
+  status.textContent="شكراً لك! تم تسجيل مشاركتك إذا كان الربط بالخادم مفعّلاً.";
+}
+</script>
+</body>
+</html>
